@@ -52,7 +52,7 @@ services:
     build:
       context: ./backend
     environment:
-      RELSTORAGE_DSN: "dbname='${DB_NAME:-plone}' user='${DB_NAME:-plone}' host='${DB_HOST:-db}' password='${DB_PASSWORD:-OoEwxhvtrozQ}' port='${DB_PORT:-5432}'"
+      RELSTORAGE_DSN: "dbname='${DB_NAME:-plone}' user='${DB_USER:-plone}' host='${DB_HOST:-db}' password='${DB_PASSWORD:-OoEwxhvtrozQ}' port='${DB_PORT:-5432}'"
     depends_on:
       - db
     labels:
